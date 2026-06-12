@@ -1,1 +1,1 @@
-# Student-Information-Management-System-SIMS-
+本專題「學生資料管理系統」（Student Information Management System）使用 C++ STL 的 vector<Student> 動態陣列管理學生資料，每筆資料包含學號、姓名與成績。系統具備新增學生、列出所有學生、依成績由高到低排序、依學號查詢以及統計全班平均、最高分、最低分與及格人數等互動功能，其中成績統計特別結合了自訂的 getMax 與 getMin template function 來輔助計算。選用 vector 作為儲存容器的主要原因在於其能完整保留資料輸入順序，並能無縫搭配 STL 的 sort() 演算法進行成績排序，完美滿足系統需求。專案程式碼可透過終端機輸入 g++ student_manager_full.cpp -std=c++17 -o student_manager 編譯，並於 Linux/macOS 環境下執行 ./student_manager，或在 Windows 環境下執行 .\student_manager.exe 啟動系統。
